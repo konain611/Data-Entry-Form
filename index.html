@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <h1>Welcome</h1>
+        <h4>Welcome to the sign up page</h4>
+        <form>
+            <label>Student Name</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>Father Name</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>Roll Number</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label for="gender">Gender</label><label style="color: red;">*</label>
+            <select name="gender" required>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select>
+            <label>Admission date</label><label style="color: red;">*</label>
+            <input type="date" required>
+            <label>Nationality</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>Cnic Number</label><label style="color: red;">*</label>
+            <input type="text" required placeholder="xxxxx-xxxxxxx-x" pattern="^[0-9]{5}-[0-9]{7}-[0-9]{1}" title="Required format xxxxx-xxxxxxx-x">
+            <label>Passport Number</label>
+            <input type="text" placeholder="XX00000000" pattern="^[A-Z]{2}-[0-9]{8}" title="Required format AB12345678">
+            <label>Date of Birth</label><label style="color: red;">*</label>
+            <input type="date" required>
+            <label>Contact number</label>
+            <input type="text" pattern="^[0-9]{11}" title="Required format 03xxxxxxxxx">
+            <label>Email</label>
+            <input type="email">
+            <label for="district">Domicile District</label>
+            <select name="district">
+                <option value="1">Azad Jammu & Kashmir</option>
+                <option value="2">Balochistan</option>
+                <option value="3">Gilgit Baltistan</option>
+                <option value="4">Khyber Pakhtunkhwa</option>
+                <option value="5">Punjab</option>
+                <option value="6">Sindh</option>
+            </select>
+            <label>Domicile Province</label>
+            <input type="text">
+            <label>Mailing Address</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>City (Mailing Address)</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>SSC Degree Name</label>
+            <input type="text">
+            <label>SSC Board Name</label>
+            <input type="text">
+            <label>SSC Total Marks</label>
+            <input type="text">
+            <label>SSC Obtained Marks</label>
+            <input type="text">
+            <label>HSSC Degree Name</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label for="degreeNomenclature">HSSC Degree Nomenclature</label><label style="color: red;">*</label>
+            <select required name="degreeNomenclature">
+                <option value="1">Intermediate with Math</option>
+                <option value="2">A Level with Math</option>
+                <option value="3">Intermediate with Pre-Medical</option>
+            </select>
+            <label>HSSC Board Name</label>
+            <input type="text">
+            <label>HSSC Total Marks</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>HSSC Obtained Marks</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>Graduation Date</label><label style="color: red;">*</label>
+            <input type="date" required>
+            <label>Total CGPA</label><label style="color: red;">*</label>
+            <input type="text" required>
+            <label>Obtained CGPA</label><label style="color: red;">*</label>
+            <input type="text" required>
+
+
+
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <!-- <p>By clicking submit, you agree to our<br>
+        <a href="t&c.html">Terms and Conditions</a> and <a href="pp.html">Privacy policy</a>
+        </p> -->
+    </div>
+
+    <!-- <p class="para2">Already have an Account? <a href="login.html">Login</a></p> -->
+</body>
+
+</html>
