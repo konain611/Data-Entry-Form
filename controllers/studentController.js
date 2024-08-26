@@ -1,4 +1,3 @@
-// controllers/studentController.js
 const { addStudent } = require('../models/studentModel');
 
 const addStudentController = (req, res) => {

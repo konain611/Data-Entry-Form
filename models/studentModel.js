@@ -1,4 +1,3 @@
-// models/studentModel.js
 const db = require('../config/dbConfig');
 
 const addStudent = (studentData, callback) => {
