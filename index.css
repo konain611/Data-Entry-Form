@@ -22,17 +22,16 @@ body {
 
 .container {
     position: relative;
-
+   
     backdrop-filter: blur(5px);
     padding: 50px;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Semi-transparent background for contrast */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
 }
 
 form header {
-    font-size: 45px;
+    font-size: 40px;
     color: rgb(255, 255, 254);
     font-weight: 500;
     text-align: center;
@@ -43,8 +42,7 @@ form label {
     font-size: 18px;
 }
 
-form input,
-form select {
+form input, form select {
     background-color: black;
     border: 2px solid navy;
     border-radius: 15px;
@@ -54,24 +52,15 @@ form select {
     margin-top: 20px;
     width: 100%;
 }
-form h4 {
-    font-size: 20px;
-    font-weight: 500;
-    font-style: italic;
-}
-form span {
-    font-size: 30px;
-    color: red;
-}
 
 .form-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
-.form-row>div {
+.form-row > div {
     flex: 1;
     min-width: 200px;
     margin-top: 23px;
@@ -99,20 +88,26 @@ form span {
 }
 
 
+
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: black;
+
+    
     background-color: white;
     width: 20px;
     height: 20px;
     border-width: thin;
 }
 
+
+
+
+
 /* Responsive */
 
 @media (max-width: 768px) {
     .form-row {
-        flex-direction: column;
-        /* Stack fields vertically on smaller screens */
+        flex-direction: column; /* Stack fields vertically on smaller screens */
     }
 
     .container {
